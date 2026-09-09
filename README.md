@@ -1,6 +1,6 @@
 # Oxygen4 - 课堂效率工具
 
-![Oxygen4](https://github.com/linxianlww/oxygen4)
+![Oxygen4](https://raw.githubusercontent.com/linxianlww/oxygen4/refs/heads/main/Oxygen4_icons/banner_x2.png)
 
 Oxygen4 是一款基于 **.NET 8 / WPF** 开发的课堂效率工具合集，旨在为高效课堂提供新颖且实用的工具。Oxygen4 是 Oxygen3 的全面重构版本，从 Python 完整移植到 C# (.NET) 平台，抛弃了原有的 HTML 基础 UI 层，采用原生 WPF 本地窗口化界面。
 
