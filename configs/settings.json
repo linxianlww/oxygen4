@@ -1,0 +1,6 @@
+{
+  "file": "default",
+  "language": "zh-cn",
+  "notify_island_url": "http://localhost:5002/notify",
+  "no_class_island_debug": false
+}

@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ApplicationIcon>Resources\favicon.ico</ApplicationIcon>
+    <AssemblyName>Oxygen4</AssemblyName>
+    <RootNamespace>Oxygen4</RootNamespace>
+    <Version>4.0.260909</Version>
+    <FileVersion>4.0.2609.9</FileVersion>
+    <AssemblyVersion>4.0.2609.9</AssemblyVersion>
+    <Company>咏叹调 Aria</Company>
+    <Product>Oxygen4</Product>
+    <Copyright>Copyright © 咏叹调 Aria 2025-2027</Copyright>
+    <NeutralLanguage>zh-CN</NeutralLanguage>
+    <SatelliteResourceLanguages>zh-CN</SatelliteResourceLanguages>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Management" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- 移除 WinForms 隐式 using，避免与 WPF 类型冲突；通过别名在 App.xaml.cs 中使用 -->
+    <Using Remove="System.Drawing" />
+    <Using Remove="System.Windows.Forms" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\**\*" />
+  </ItemGroup>
+
+</Project>
